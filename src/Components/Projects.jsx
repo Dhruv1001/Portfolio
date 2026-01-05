@@ -24,6 +24,35 @@ const Projects = () => {
           </p>
           <p><strong>Tech:</strong> Solidity </p>
         </div>
+        <div className="project-card">
+          <h3>Github-Profile-search</h3>
+          <p>
+            A React-based web application that allows users to search GitHub profiles and view detailed user information using the GitHub REST API.
+          </p>
+          <p>
+            Key Features:<br/>
+            1.Search GitHub users by username<br/>
+            2.Display profile details (bio, followers, repos)<br/>
+            3.Error handling for invalid users<br/>
+            4.Responsive UI<br/>
+          </p>
+          <p><strong>Tech:</strong> React.js, JavaScript, Github REST API, HTML, CSS </p>
+        </div>
+        <div className="project-card">
+          <h3>AI-Resume-Analyzer</h3>
+          <p>
+            An AI-powered web application that analyzes resumes against job descriptions to calculate ATS-style match percentage, identify missing skills, and provide actionable improvement suggestions.
+          </p>
+          <p>
+            Key Features:<br/>
+            1.Resume upload (PDF)<br/>
+            2.Job description comparison<br/>
+            3.Match percentage calculation<br/>
+            4.Missing skills detection<br/>
+            5.Improvement suggestions using AI
+          </p>
+          <p><strong>Tech:</strong> React.js, Node.js, Express.js, PDF.js, Google Gemini AI, REST APIs </p>
+        </div>
       </div>
     
     </section>
