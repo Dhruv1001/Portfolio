@@ -51,7 +51,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={sectionRef}
-      className="relative z-[2] px-16 py-24"
+      className="relative z-[2] px-6 md:px-16 py-16 md:py-24"
       style={{ background: "linear-gradient(180deg, var(--dark) 0%, var(--dark2) 50%, var(--dark) 100%)" }}
     >
       <div className="text-xs tracking-[3px] uppercase mb-3 section-tag-line" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--cyan)" }}>02</div>

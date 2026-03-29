@@ -24,14 +24,14 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="relative z-[2] px-16 py-24">
+    <section id="about" ref={sectionRef} className="relative z-[2] px-6 md:px-16 py-16 md:py-24">
       <div className="text-xs tracking-[3px] uppercase mb-3 section-tag-line" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--cyan)" }}>01</div>
       <h2 className="text-5xl font-bold text-white mb-3" style={{ fontFamily: "var(--font-orbitron)" }}>
         About <span style={{ color: "var(--cyan)" }}>Me</span>
       </h2>
       <div className="w-16 h-0.5 mb-12" style={{ background: "linear-gradient(90deg, var(--cyan), transparent)", boxShadow: "0 0 10px var(--cyan)" }} />
 
-      <div className="grid md:grid-cols-2 gap-20 items-center reveal">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center reveal">
         {/* Text */}
         <div>
           <p className="leading-relaxed mb-5" style={{ color: "var(--muted)" }}>

@@ -38,8 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen z-[2] flex items-center"
-      style={{ padding: "8rem 4rem 4rem" }}
+      className="relative min-h-screen z-[2] flex items-center pt-32 pb-16 px-6 md:px-16"
     >
       <div className="max-w-3xl">
         {/* Tag */}
@@ -96,7 +95,7 @@ export default function Hero() {
 
         {/* Stats */}
         <div
-          className="flex gap-12 mt-16 pt-8"
+          className="flex flex-wrap gap-8 md:gap-12 mt-12 md:mt-16 pt-8"
           style={{ borderTop: "1px solid var(--border)" }}
         >
           {stats.map((s, i) => (

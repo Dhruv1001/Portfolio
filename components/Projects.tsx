@@ -61,7 +61,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="relative z-[2] px-16 py-24">
+    <section id="projects" ref={sectionRef} className="relative z-[2] px-6 md:px-16 py-16 md:py-24">
       <div className="text-xs tracking-[3px] uppercase mb-3 section-tag-line" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--cyan)" }}>03</div>
       <h2 className="text-5xl font-bold text-white mb-3" style={{ fontFamily: "var(--font-orbitron)" }}>
         Featured <span style={{ color: "var(--cyan)" }}>Projects</span>

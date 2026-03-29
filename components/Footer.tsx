@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="relative z-[2] text-center py-8 px-16"
+      className="relative z-[2] text-center py-8 px-6 md:px-16"
       style={{
         borderTop: "1px solid var(--border)",
         fontFamily: "var(--font-jetbrains)",

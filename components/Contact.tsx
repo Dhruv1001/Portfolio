@@ -33,7 +33,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative z-[2] px-16 py-24"
+      className="relative z-[2] px-6 md:px-16 py-16 md:py-24"
       style={{ borderTop: "1px solid var(--border)", background: "linear-gradient(180deg, var(--dark) 0%, var(--dark2) 100%)" }}
     >
       <div className="text-xs tracking-[3px] uppercase mb-3 section-tag-line" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--cyan)" }}>04</div>
@@ -42,7 +42,7 @@ export default function Contact() {
       </h2>
       <div className="w-16 h-0.5 mb-12" style={{ background: "linear-gradient(90deg, var(--cyan), transparent)", boxShadow: "0 0 10px var(--cyan)" }} />
 
-      <div className="grid md:grid-cols-2 gap-20 reveal">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-20 reveal">
         {/* Left */}
         <div>
           <p className="leading-relaxed mb-5" style={{ color: "var(--muted)" }}>
