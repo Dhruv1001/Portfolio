@@ -52,7 +52,7 @@ export default function Cursor() {
     <>
       <div
         ref={cursorRef}
-        className="hidden md:block fixed z-[9999] pointer-events-none rounded-full"
+        className="custom-cursor fixed z-[9999] pointer-events-none rounded-full"
         style={{
           width: 12,
           height: 12,
@@ -64,7 +64,7 @@ export default function Cursor() {
       />
       <div
         ref={ringRef}
-        className="hidden md:block fixed z-[9998] pointer-events-none rounded-full"
+        className="custom-cursor fixed z-[9998] pointer-events-none rounded-full"
         style={{
           width: 36,
           height: 36,

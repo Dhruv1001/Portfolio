@@ -37,9 +37,16 @@ body {
   overflow-x: hidden;
 }
 
+.custom-cursor {
+  display: none;
+}
+
 @media (pointer: fine) {
   body {
     cursor: none;
+  }
+  .custom-cursor {
+    display: block;
   }
 }
 

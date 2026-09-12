@@ -69,7 +69,10 @@ export default function Projects() {
             <div className="relative h-44 flex items-center justify-center overflow-hidden" style={{ background: "inherit" }}>
               <div className="banner-grid" />
               <div className="absolute rounded-full" style={{ width: 120, height: 120, background: p.glowColor, filter: "blur(40px)", top: "20%", left: "35%" }} />
-              <span className="relative z-10 font-black" style={{ fontFamily: "var(--font-orbitron)", fontSize: "2.5rem", color: "rgba(255,255,255,0.1)", textShadow: "0 0 40px rgba(63,185,80,0.3)" }}>
+              <span
+                className="relative z-10 font-black text-center px-6"
+                style={{ fontFamily: "var(--font-orbitron)", fontSize: "2.5rem", color: "rgba(255,255,255,0.1)", textShadow: "0 0 40px rgba(63,185,80,0.3)" }}
+              >
                 {p.bannerLabel}
               </span>
             </div>

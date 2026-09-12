@@ -7,7 +7,7 @@ const links = ["About", "Skills", "Projects", "Contact"];
 export default function Nav() {
   return (
     <nav
-      className="fixed top-0 w-full z-[100] flex justify-between items-center px-16 py-5"
+      className="fixed top-0 w-full z-[100] flex justify-between items-center px-6 md:px-10 lg:px-16 py-5"
       style={{
         borderBottom: "1px solid var(--border)",
         background: "rgba(13,17,23,0.8)",
@@ -25,7 +25,7 @@ export default function Nav() {
         DHRUV.EXE
       </div>
 
-      <ul className="hidden md:flex gap-10 list-none">
+      <ul className="hidden lg:flex gap-10 list-none">
         {links.map((l) => (
           <li key={l}>
             <Link
