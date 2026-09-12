@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DHRUV.EXE — Web3 & Frontend Developer",
+  title: "DHRUV.EXE — Frontend Software Engineer",
   description:
-    "Web3 & Frontend Developer building decentralized applications, smart contracts, and immersive interfaces on Ethereum, Polygon, and Base.",
+    "Frontend Software Engineer building production-grade fintech and Web3 platforms with React, Next.js, and TypeScript.",
 };
 
 export default function RootLayout({

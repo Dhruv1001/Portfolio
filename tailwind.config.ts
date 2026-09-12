@@ -14,12 +14,12 @@ const config: Config = {
         sans: ["var(--font-space)", "sans-serif"],
       },
       colors: {
-        cyan: "#00f5ff",
-        "dark-1": "#020b18",
-        "dark-2": "#041428",
-        "dark-3": "#071f38",
-        "text-primary": "#c8e6f5",
-        muted: "#5a8aaa",
+        cyan: "#3fb950",
+        "dark-1": "#0d1117",
+        "dark-2": "#161b22",
+        "dark-3": "#21262d",
+        "text-primary": "#c9d1d9",
+        muted: "#8b949e",
       },
       animation: {
         float: "float 4s ease-in-out infinite",

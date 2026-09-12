@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap");
 
 :root {
-  --cyan: #00f5ff;
-  --blue: #0066ff;
-  --purple: #7b2fff;
-  --dark: #020b18;
-  --dark2: #041428;
-  --dark3: #071f38;
-  --text: #c8e6f5;
-  --muted: #5a8aaa;
-  --border: rgba(0, 245, 255, 0.15);
+  --cyan: #3fb950;
+  --blue: #58a6ff;
+  --purple: #a371f7;
+  --dark: #0d1117;
+  --dark2: #161b22;
+  --dark3: #21262d;
+  --text: #c9d1d9;
+  --muted: #8b949e;
+  --border: rgba(201, 209, 217, 0.12);
 
-  --font-orbitron: "Orbitron", monospace;
+  --font-orbitron: "JetBrains Mono", monospace;
   --font-jetbrains: "JetBrains Mono", monospace;
   --font-space: "Space Grotesk", sans-serif;
 }
@@ -35,7 +35,12 @@ body {
   color: var(--text);
   font-family: var(--font-space);
   overflow-x: hidden;
-  cursor: none;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
 }
 
 /* Scrollbar */
@@ -74,7 +79,7 @@ body::before {
 
 /* Glow text */
 .glow-text {
-  text-shadow: 0 0 30px rgba(0, 245, 255, 0.6), 0 0 60px rgba(0, 245, 255, 0.3);
+  text-shadow: 0 0 12px rgba(63, 185, 80, 0.35);
 }
 
 /* Section tag line */
@@ -99,7 +104,7 @@ body::before {
 .banner-grid {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(0, 245, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 245, 255, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(201, 209, 217, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 209, 217, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }

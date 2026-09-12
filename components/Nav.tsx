@@ -10,7 +10,7 @@ export default function Nav() {
       className="fixed top-0 w-full z-[100] flex justify-between items-center px-16 py-5"
       style={{
         borderBottom: "1px solid var(--border)",
-        background: "rgba(2,11,24,0.8)",
+        background: "rgba(13,17,23,0.8)",
         backdropFilter: "blur(20px)",
       }}
     >
@@ -19,7 +19,7 @@ export default function Nav() {
         style={{
           fontFamily: "var(--font-orbitron)",
           color: "var(--cyan)",
-          textShadow: "0 0 20px rgba(0,245,255,0.5)",
+          textShadow: "0 0 20px rgba(63,185,80,0.5)",
         }}
       >
         DHRUV.EXE
@@ -43,18 +43,33 @@ export default function Nav() {
         ))}
       </ul>
 
-      <Link
-        href="#contact"
-        className="px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300"
-        style={{
-          border: "1px solid var(--cyan)",
-          color: "var(--cyan)",
-          fontFamily: "var(--font-jetbrains)",
-          borderRadius: 2,
-        }}
-      >
-        Hire Me
-      </Link>
+      <div className="flex items-center gap-3">
+        <a
+          href="/Dhruv_Buddhabhatti_Resume.pdf"
+          download="Dhruv_Buddhabhatti_Resume.pdf"
+          className="hidden sm:inline-block px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300"
+          style={{
+            border: "1px solid var(--border)",
+            color: "var(--text)",
+            fontFamily: "var(--font-jetbrains)",
+            borderRadius: 2,
+          }}
+        >
+          Resume
+        </a>
+        <Link
+          href="#contact"
+          className="px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300"
+          style={{
+            border: "1px solid var(--cyan)",
+            color: "var(--cyan)",
+            fontFamily: "var(--font-jetbrains)",
+            borderRadius: 2,
+          }}
+        >
+          Hire Me
+        </Link>
+      </div>
     </nav>
   );
 }

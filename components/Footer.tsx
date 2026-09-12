@@ -10,8 +10,8 @@ export default function Footer() {
       }}
     >
       <span style={{ color: "var(--cyan)" }}>DHRUV.EXE</span>
-      &nbsp;·&nbsp; Web3 &amp; Frontend Developer
-      &nbsp;·&nbsp; Built on the decentralized web
+      &nbsp;·&nbsp; Frontend Software Engineer
+      &nbsp;·&nbsp; Building production frontends, one commit at a time
       &nbsp;·&nbsp; <span style={{ color: "var(--cyan)" }}>2026</span>
     </footer>
   );

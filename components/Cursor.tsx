@@ -11,6 +11,7 @@ export default function Cursor() {
     const cursor = cursorRef.current;
     const ring = ringRef.current;
     if (!cursor || !ring) return;
+    if (!window.matchMedia("(pointer: fine)").matches) return;
 
     const onMove = (e: MouseEvent) => {
       pos.current.mx = e.clientX;
@@ -30,11 +31,11 @@ export default function Cursor() {
 
     const onEnter = () => {
       ring.style.transform = "translate(-50%,-50%) scale(1.5)";
-      ring.style.borderColor = "rgba(0,245,255,0.8)";
+      ring.style.borderColor = "rgba(63,185,80,0.8)";
     };
     const onLeave = () => {
       ring.style.transform = "translate(-50%,-50%) scale(1)";
-      ring.style.borderColor = "rgba(0,245,255,0.5)";
+      ring.style.borderColor = "rgba(63,185,80,0.5)";
     };
 
     document.addEventListener("mousemove", onMove);
@@ -51,23 +52,23 @@ export default function Cursor() {
     <>
       <div
         ref={cursorRef}
-        className="fixed z-[9999] pointer-events-none rounded-full"
+        className="hidden md:block fixed z-[9999] pointer-events-none rounded-full"
         style={{
           width: 12,
           height: 12,
           background: "var(--cyan)",
           transform: "translate(-50%,-50%)",
-          boxShadow: "0 0 20px var(--cyan), 0 0 40px rgba(0,245,255,0.4)",
+          boxShadow: "0 0 20px var(--cyan), 0 0 40px rgba(63,185,80,0.4)",
           transition: "transform 0.1s",
         }}
       />
       <div
         ref={ringRef}
-        className="fixed z-[9998] pointer-events-none rounded-full"
+        className="hidden md:block fixed z-[9998] pointer-events-none rounded-full"
         style={{
           width: 36,
           height: 36,
-          border: "1px solid rgba(0,245,255,0.5)",
+          border: "1px solid rgba(63,185,80,0.5)",
           transform: "translate(-50%,-50%)",
           transition: "all 0.15s ease",
         }}

@@ -38,7 +38,7 @@ export default function ParticleCanvas() {
       ctx.clearRect(0, 0, W, H);
 
       // Grid
-      ctx.strokeStyle = "rgba(0,245,255,0.03)";
+      ctx.strokeStyle = "rgba(63,185,80,0.03)";
       ctx.lineWidth = 1;
       const gs = 80;
       for (let x = 0; x < W; x += gs) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
@@ -52,7 +52,7 @@ export default function ParticleCanvas() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0,245,255,${p.a})`;
+        ctx.fillStyle = `rgba(63,185,80,${p.a})`;
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -63,7 +63,7 @@ export default function ParticleCanvas() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(0,245,255,${0.12 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(63,185,80,${0.12 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

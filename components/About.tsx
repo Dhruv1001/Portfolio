@@ -2,14 +2,13 @@
 
 import { useEffect, useRef } from "react";
 
-const chains = [
-  { abbr: "ETH", name: "Ethereum", sub: "EVM Smart Contracts", level: "Expert", bg: "rgba(98,126,234,0.2)", color: "#627eea", border: "rgba(98,126,234,0.3)" },
-  { abbr: "SOL", name: "Solana", sub: "Rust / Anchor Programs", level: "Proficient", bg: "rgba(153,69,255,0.2)", color: "#9945ff", border: "rgba(153,69,255,0.3)" },
-  { abbr: "POLY", name: "Polygon", sub: "L2 Scaling Solutions", level: "Expert", bg: "rgba(130,71,229,0.2)", color: "#8247e5", border: "rgba(130,71,229,0.3)" },
-  { abbr: "BASE", name: "Base", sub: "OP Stack Deployment", level: "Proficient", bg: "rgba(0,82,255,0.2)", color: "#0052ff", border: "rgba(0,82,255,0.3)" },
+const platforms = [
+  { abbr: "SPK", name: "SPARK Social", sub: "Fintech · Wallet + Admin Panel", color: "#3fb950", bg: "rgba(63,185,80,0.2)", border: "rgba(63,185,80,0.3)" },
+  { abbr: "KW", name: "KindWallet", sub: "Web3 · Chrome Extension Wallet", color: "#58a6ff", bg: "rgba(88,166,255,0.2)", border: "rgba(88,166,255,0.3)" },
+  { abbr: "AI", name: "AI Resume Analyzer", sub: "Full-Stack · Gemini AI", color: "#a371f7", bg: "rgba(163,113,247,0.2)", border: "rgba(163,113,247,0.3)" },
 ];
 
-const pills = ["Solidity", "React / Next.js", "ethers.js", "IPFS"];
+const pills = ["React / Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS"];
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -35,13 +34,13 @@ export default function About() {
         {/* Text */}
         <div>
           <p className="leading-relaxed mb-5" style={{ color: "var(--muted)" }}>
-            I&apos;m a passionate <strong className="text-white">Web3 &amp; Frontend Developer</strong> who lives at the intersection of cutting-edge blockchain technology and beautiful user experience design.
+            I&apos;m a <strong className="text-white">Frontend Software Engineer</strong> at SoluLab, building production-grade frontends for fintech and Web3 platforms — customer, vendor, and admin panels alike.
           </p>
           <p className="leading-relaxed mb-5" style={{ color: "var(--muted)" }}>
-            With expertise in <strong className="text-white">Solidity smart contract development</strong> and modern frontend frameworks, I build decentralized applications that are not only functional and secure — but genuinely delightful to use.
+            With <strong className="text-white">React, Next.js, and TypeScript</strong>, I translate complex requirements into scalable, maintainable UI architectures — collaborating closely with backend and design teams to ship reliable products.
           </p>
           <p className="leading-relaxed" style={{ color: "var(--muted)" }}>
-            From DeFi protocols and NFT platforms to DAO governance tools, I bring ideas from whitepaper to mainnet. I believe Web3 shouldn&apos;t feel complicated — great UX is what drives real adoption.
+            My frontend work is backed by full-stack literacy — Node.js, Express, and FastAPI on the backend, PostgreSQL and MongoDB for data, and Docker/AWS for shipping it all. I care about end-to-end feature ownership, not just pixels.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
             {pills.map((p) => (
@@ -51,7 +50,7 @@ export default function About() {
                 style={{
                   border: "1px solid var(--border)",
                   color: "var(--cyan)",
-                  background: "rgba(0,245,255,0.05)",
+                  background: "rgba(63,185,80,0.05)",
                   fontFamily: "var(--font-jetbrains)",
                   borderRadius: 2,
                 }}
@@ -65,14 +64,14 @@ export default function About() {
         {/* Card */}
         <div
           className="relative overflow-hidden p-10"
-          style={{ border: "1px solid var(--border)", background: "rgba(4,20,40,0.5)", borderRadius: 4 }}
+          style={{ border: "1px solid var(--border)", background: "rgba(22,27,34,0.5)", borderRadius: 4 }}
         >
-          <div className="absolute inset-0" style={{ background: "radial-gradient(circle at top right, rgba(0,245,255,0.05), transparent 60%)" }} />
+          <div className="absolute inset-0" style={{ background: "radial-gradient(circle at top right, rgba(63,185,80,0.05), transparent 60%)" }} />
           <div className="relative z-10">
             <div className="text-xs tracking-widest mb-5" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--muted)" }}>
-              // Blockchain Expertise
+              // Platforms Delivered
             </div>
-            {chains.map((c) => (
+            {platforms.map((c) => (
               <div key={c.name} className="flex items-center gap-4 my-4" style={{ fontFamily: "var(--font-jetbrains)", fontSize: 13 }}>
                 <div
                   className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0"
@@ -84,19 +83,18 @@ export default function About() {
                   <div style={{ color: "var(--text)" }}>{c.name}</div>
                   <div className="text-xs" style={{ color: "var(--muted)" }}>{c.sub}</div>
                 </div>
-                <div className="ml-auto text-xs" style={{ color: "#00ff88" }}>{c.level}</div>
               </div>
             ))}
 
-            <div className="mt-6 pt-6" style={{ borderTop: "1px solid rgba(0,245,255,0.1)" }}>
-              <div className="text-xs tracking-widest mb-3" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--muted)" }}>// Audit Score</div>
+            <div className="mt-6 pt-6" style={{ borderTop: "1px solid rgba(63,185,80,0.1)" }}>
+              <div className="text-xs tracking-widest mb-3" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--muted)" }}>// Achievement</div>
               <div className="flex items-center gap-3">
-                <div className="flex-1 h-1 rounded overflow-hidden" style={{ background: "rgba(0,245,255,0.1)" }}>
-                  <div className="h-full" style={{ width: "94%", background: "linear-gradient(90deg, var(--cyan), var(--blue))", borderRadius: 2 }} />
+                <span style={{ fontSize: 18 }}>🏆</span>
+                <div>
+                  <div style={{ color: "var(--text)" }}>2nd Runner-Up</div>
+                  <div className="text-xs" style={{ color: "var(--muted)" }}>HackNUthon 2025 — State Level Hackathon</div>
                 </div>
-                <span className="text-xs" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--cyan)" }}>94%</span>
               </div>
-              <div className="text-xs mt-2" style={{ color: "var(--muted)" }}>Zero critical vulnerabilities across all audited contracts</div>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Scan line */}
       <div className="fixed left-0 w-full h-px z-[1] pointer-events-none animate-scan"
-        style={{ background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.08), transparent)" }}
+        style={{ background: "linear-gradient(90deg, transparent, rgba(63,185,80,0.08), transparent)" }}
       />
 
       {/* Page */}

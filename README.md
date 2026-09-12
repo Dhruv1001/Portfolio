@@ -103,18 +103,18 @@ npm run build
 | Tailwind CSS | Utility-first styling |
 | Canvas API | Particle background animation |
 | CSS Variables | Theming & dark futuristic palette |
-| Google Fonts | Orbitron + JetBrains Mono + Space Grotesk |
+| Google Fonts | JetBrains Mono + Space Grotesk |
 
 ---
 
-## 🎨 Color Palette
+## 🎨 Color Palette — "Refined Terminal"
 
 | Variable | Value | Use |
 |----------|-------|-----|
-| `--cyan` | `#00f5ff` | Primary accent, glow |
-| `--blue` | `#0066ff` | Secondary accent |
-| `--purple` | `#7b2fff` | Tertiary accent |
-| `--dark` | `#020b18` | Page background |
-| `--text` | `#c8e6f5` | Body text |
-| `--muted` | `#5a8aaa` | Secondary text |
-| `--border` | `rgba(0,245,255,0.15)` | Borders |
+| `--cyan` | `#3fb950` | Primary accent, glow |
+| `--blue` | `#58a6ff` | Secondary accent |
+| `--purple` | `#a371f7` | Tertiary accent |
+| `--dark` | `#0d1117` | Page background |
+| `--text` | `#c9d1d9` | Body text |
+| `--muted` | `#8b949e` | Secondary text |
+| `--border` | `rgba(201,209,217,0.12)` | Borders |

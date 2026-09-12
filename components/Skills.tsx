@@ -2,37 +2,36 @@
 
 import { useEffect, useRef } from "react";
 
-interface Tag { label: string; variant: "cyan" | "blue" | "purple" | "green" }
+interface Tag { label: string; variant: "cyan" | "blue" | "purple" }
 interface Skill { icon: string; name: string; desc: string; tags: Tag[] }
 
 const skills: Skill[] = [
   {
-    icon: "⛓️", name: "Smart Contracts",
-    desc: "Writing secure, gas-optimized Solidity contracts. ERC-20, ERC-721, ERC-1155 standards. DeFi primitives and custom protocol logic.",
-    tags: [{ label: "Solidity", variant: "cyan" }, { label: "Hardhat", variant: "cyan" }, { label: "Foundry", variant: "cyan" }, { label: "OpenZeppelin", variant: "blue" }],
+    icon: "💻", name: "Frontend",
+    desc: "Building responsive, production-grade UIs for customer and admin panels alike — reusable components, scalable architecture, and pixel-accurate implementations from design specs.",
+    tags: [{ label: "React.js", variant: "cyan" }, { label: "Next.js", variant: "cyan" }, { label: "TypeScript", variant: "blue" }, { label: "Tailwind CSS", variant: "cyan" }, { label: "Redux Toolkit", variant: "purple" }],
   },
   {
-    icon: "🌐", name: "Frontend Dev",
-    desc: "Building pixel-perfect, performant UIs with modern frameworks. SSR, SSG, and Web3 wallet integrations that feel native.",
-    tags: [{ label: "React", variant: "blue" }, { label: "Next.js", variant: "blue" }, { label: "TypeScript", variant: "purple" }, { label: "Tailwind", variant: "cyan" }],
+    icon: "🔌", name: "Backend & APIs",
+    desc: "Integrating and building REST APIs, working closely with backend teams to wire up real-time data — from wallet transactions to reconciliation feeds.",
+    tags: [{ label: "Node.js", variant: "cyan" }, { label: "Express.js", variant: "blue" }, { label: "FastAPI", variant: "purple" }, { label: "REST APIs", variant: "cyan" }],
   },
   {
-    icon: "🔗", name: "Web3 Integration",
-    desc: "Seamless dApp connectivity. Multi-wallet support, contract reads/writes, transaction lifecycle management, and real-time event listeners.",
-    tags: [{ label: "ethers.js", variant: "cyan" }, { label: "wagmi", variant: "cyan" }, { label: "viem", variant: "blue" }, { label: "WalletConnect", variant: "purple" }],
+    icon: "🗄️", name: "Databases",
+    desc: "Comfortable across relational and document stores, from schema design to querying data that powers dashboards and transaction histories.",
+    tags: [{ label: "PostgreSQL", variant: "blue" }, { label: "MongoDB", variant: "cyan" }, { label: "MySQL", variant: "purple" }, { label: "SQL", variant: "cyan" }],
   },
   {
-    icon: "🗄️", name: "Decentralized Storage",
-    desc: "Storing metadata, assets, and app data on decentralized networks. Ensuring censorship-resistant and permanent data availability.",
-    tags: [{ label: "IPFS", variant: "green" }, { label: "Filecoin", variant: "green" }, { label: "Arweave", variant: "cyan" }, { label: "Pinata", variant: "blue" }],
+    icon: "🛠️", name: "Systems & Tools",
+    desc: "Async programming, WebSockets, and latency optimization for real-time features, backed by solid Git workflows and containerized deployments.",
+    tags: [{ label: "Docker", variant: "cyan" }, { label: "AWS", variant: "blue" }, { label: "Git / GitHub", variant: "cyan" }, { label: "WebSockets", variant: "purple" }],
   },
 ];
 
 const tagStyles: Record<string, React.CSSProperties> = {
-  cyan:   { background: "rgba(0,245,255,0.08)",  color: "var(--cyan)",   border: "1px solid rgba(0,245,255,0.2)" },
-  blue:   { background: "rgba(0,102,255,0.1)",   color: "#5599ff",       border: "1px solid rgba(0,102,255,0.2)" },
-  purple: { background: "rgba(123,47,255,0.1)",  color: "#aa77ff",       border: "1px solid rgba(123,47,255,0.2)" },
-  green:  { background: "rgba(0,255,136,0.08)",  color: "#00ff88",       border: "1px solid rgba(0,255,136,0.2)" },
+  cyan:   { background: "rgba(63,185,80,0.08)",   color: "var(--cyan)", border: "1px solid rgba(63,185,80,0.2)" },
+  blue:   { background: "rgba(88,166,255,0.1)",   color: "#58a6ff",     border: "1px solid rgba(88,166,255,0.2)" },
+  purple: { background: "rgba(163,113,247,0.1)",  color: "#a371f7",     border: "1px solid rgba(163,113,247,0.2)" },
 };
 
 export default function Skills() {
@@ -65,7 +64,7 @@ export default function Skills() {
           <div
             key={i}
             className="reveal relative overflow-hidden p-7 transition-all duration-300 group"
-            style={{ border: "1px solid var(--border)", background: "rgba(4,20,40,0.6)", borderRadius: 4, transitionDelay: `${i * 80}ms` }}
+            style={{ border: "1px solid var(--border)", background: "rgba(22,27,34,0.6)", borderRadius: 4, transitionDelay: `${i * 80}ms` }}
           >
             <div
               className="absolute top-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
