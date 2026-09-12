@@ -15,7 +15,7 @@ export default function Nav() {
       }}
     >
       <div
-        className="text-xl font-bold tracking-[3px]"
+        className="text-base sm:text-xl font-bold tracking-[1px] sm:tracking-[3px] flex-shrink-0"
         style={{
           fontFamily: "var(--font-orbitron)",
           color: "var(--cyan)",
@@ -43,11 +43,11 @@ export default function Nav() {
         ))}
       </ul>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
         <a
           href="/Dhruv_Buddhabhatti_Resume.pdf"
           download="Dhruv_Buddhabhatti_Resume.pdf"
-          className="hidden sm:inline-block px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300"
+          className="px-3 sm:px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300 whitespace-nowrap"
           style={{
             border: "1px solid var(--border)",
             color: "var(--text)",
@@ -59,7 +59,7 @@ export default function Nav() {
         </a>
         <Link
           href="#contact"
-          className="px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300"
+          className="px-3 sm:px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300 whitespace-nowrap"
           style={{
             border: "1px solid var(--cyan)",
             color: "var(--cyan)",
