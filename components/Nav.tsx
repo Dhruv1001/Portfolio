@@ -45,7 +45,7 @@ export default function Nav() {
 
       <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
         <a
-          href="/Dhruv_Buddhabhatti_Resume (2)"
+          href="/Dhruv_Buddhabhatti_Resume (2).pdf"
           download="Dhruv_Buddhabhatti_Resume.pdf"
           className="px-3 sm:px-5 py-2 text-xs tracking-wider uppercase transition-all duration-300 whitespace-nowrap"
           style={{
